@@ -1,0 +1,55 @@
+{
+    "name": "xiaohuasheng0x1/tron-api-co",
+    "version": "1.0.0",
+    "description": "A PHP API for interacting with Tron (Trx)",
+    "license": "MIT",
+    "type":   "library",
+    "homepage": "https://github.com/xiaohuasheng0x1/tron-api-co",
+    "authors": [
+        {
+            "name": "Shamsudin Serderov",
+            "email": "steein.shamsudin@gmail.com"
+        }
+    ],
+    "keywords": [
+        "tron-lib",
+        "tron-php-co",
+        "tron-api-co",
+        "tron-rest-api"
+    ],
+
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "ext-bcmath": "*",
+        "ext-swoole": "*",
+        "swlib/saber": "^1.0",
+        "swoole/ide-helper": "^5.0",
+        "xiaohuasheng0x1/web3-php-co": "^1.0.0",
+        "xiaohuasheng0x1/data-types": "^1.0.0",
+        "kornrunner/secp256k1": "^0.2",
+        "simplito/elliptic-php": "^1.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IEXBase\\TronAPI\\": "src"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "IEXBase\\TronAPI\\Test\\": "tests"
+        }
+    },
+
+    "config": {
+        "sort-packages": true
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
